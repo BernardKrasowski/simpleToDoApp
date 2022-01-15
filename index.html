@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="search" data-search>
+        <input
+          for="input_search"
+          class="label_task"
+          type="label_task"
+          value="Add Task:"
+          readonly
+        />
+        <input
+          id="input_search"
+          type="input_search"
+          data-input_search
+          class="search_input"
+        />
+
+        <button data-button_submit class="btn btn_save">Save</button>
+      </div>
+
+      <div class="list" data-list>
+        <div class="list_tasks" data-list_tasks></div>
+      </div>
+
+      <div class="setting">
+        <button data-clear_list class="btn btn_clear">Clear List</button>
+        <button data-editBtn class="btn btn_edit">Edit</button>
+        <button data-saveBtn disabled class="btn btn_saveTask">Save</button>
+        <button data-deleteBtn class="btn btn_delete">Delete</button>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
